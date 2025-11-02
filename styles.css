@@ -230,6 +230,9 @@ footer
   #site-menu, #site-menu a{
   background-color: #3cb371;
   }
+  #goals ul{
+  justify-content: center;
+  }
   .title {
     font-size: 1.1rem;
     text-align: left;
@@ -339,6 +342,9 @@ footer
     padding: 0.9em;
     background-color: #3cb371;
   }
+  #goals ul{
+  justify-content: center;
+  }
   #site-menu, #site-menu a{
   background-color: #3cb371;
   }
@@ -362,6 +368,9 @@ footer
   html { font-size: 13px; }
   #site-menu, #site-menu a{
   background-color: #3cb371;
+  }
+  #goals ul{
+  justify-content: center;
   }
   header{
     background-color: #3cb371;
