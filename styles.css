@@ -128,7 +128,7 @@ main {
 ul{
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  
 }
 strong{
   color: var(--primary-2);
@@ -175,8 +175,6 @@ li{
   flex-wrap: wrap;
 }
 li img{
-  max-width: 100%;
-  height: auto;
   margin-top: 0.3125rem;
   width: 9.375rem;
   height: 9.375rem;
@@ -266,87 +264,3 @@ li img:hover{
   background-color: var(--accent);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 900px) {
-  body {
-    font-size: 1.05rem;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .index-header {
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 1.55rem;
-  }
-
-  nav ul {
-    gap: 1.25rem;
-    padding: 0;
-  }
-
-  #site-menu {
-    margin: 1.25rem 0;
-    justify-content: center;
-    gap: 1.25rem;
-  }
-
-  #site-menu li a {
-    font-size: 1.25rem;
-  }
-
-  .menu-image {
-    width: min(14rem, 80vw);
-    height: auto;
-  }
-
-  .image {
-    width: min(26rem, 92vw);
-    height: auto;
-  }
-
-  li img {
-    width: min(8rem, 42vw);
-    height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  main {
-    padding: 0.9rem;
-  }
-
-  h3 {
-    font-size: 1.35rem;
-  }
-
-  #issues {
-    padding-right: 0;
-  }
-
-  .image-container {
-    gap: 1rem;
-  }
-
-  .quiz-container div {
-    width: 100%;
-  }
-
-  .results div {
-    width: 100%;
-  }
-
-  .submit-btn {
-    width: 100%;
-    margin-left: 0;
-  }
-}
