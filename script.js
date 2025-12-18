@@ -164,36 +164,4 @@ document.querySelector(".submit-btn").addEventListener("click", () => {
   finalScore.innerHTML = `<strong>Ваш результат: ${score} из ${quizData.length}</strong>`;
   resultsFooter.appendChild(finalScore);
 });
-document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-  const siteMenu = document.getElementById('site-menu');
 
-  if (!menuToggle || !nav || !siteMenu) return;
-
-  function setOpen(open) {
-    menuToggle.classList.toggle('open', open);
-    nav.classList.toggle('open', open);
-    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    menuToggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-  }
-
-  menuToggle.addEventListener('click', function (e) {
-    const isOpen = menuToggle.classList.contains('open');
-    setOpen(!isOpen);
-  });
-
-  siteMenu.addEventListener('click', function (e) {
-    if (e.target.tagName.toLowerCase() === 'a') {
-      setOpen(false);
-    }
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') setOpen(false);
-  });
-
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 640) setOpen(false);
-  });
-});
