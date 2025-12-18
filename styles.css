@@ -130,6 +130,9 @@ ul{
   display: flex;
   
 }
+strong{
+  color: var(--primary-2);
+}
 #goals ul{
   flex-wrap: wrap;
   align-items: last baseline;
