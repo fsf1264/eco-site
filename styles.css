@@ -188,10 +188,8 @@ section {
 main section{
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
   border-radius: 14px;
   padding: 1rem 1.1rem;
-  backdrop-filter: blur(6px);
 }
 .quiz-container {
   display: flex;
@@ -315,11 +313,6 @@ img {
     margin-left: 0;
     width: 100%;
     margin-top: 0.5rem;
-  }
-  main section{
-  border: none;
-  box-shadow: none;
-  backdrop-filter: none;
   }
 }
 @media (max-width: 480px) {
