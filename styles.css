@@ -308,7 +308,6 @@ img {
   .menu-image {
     width: 15rem;
     height: 15rem;
-    max-width: 100%;
   }
    .submit-btn {
     font-size: 1rem;
@@ -338,8 +337,5 @@ img {
     height: 12rem;
   }
 
-  .image {
-    max-width: 100%;
-  }
 
 }
