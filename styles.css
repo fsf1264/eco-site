@@ -282,6 +282,12 @@ img {
     font-size: 1rem;
   }
 
+  #site-menu{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+  }
+  
   header {
     flex-direction: column;
     align-items: center;
