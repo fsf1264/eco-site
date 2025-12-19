@@ -27,7 +27,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -153,6 +152,7 @@ li{
   justify-content: space-around;
   align-items: last baseline;
   margin: 2.5rem ;
+  flex-wrap: wrap;
 }
 #site-menu li{
   width: fit-content;
@@ -263,4 +263,83 @@ li img:hover{
 .submit-btn:hover {
   background-color: var(--accent);
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .quiz-container {
+    flex-direction: column;
+  }
+  .quiz-container div {
+    width: 100%;
+  }
+  .results {
+    flex-direction: column;
+  }
+  .results div {
+    width: 100%;
+  }
+  body {
+    font-size: 1rem;
+  }
 
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .index-header {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .header-a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
+  }
+  .menu-image {
+    width: 15rem;
+    height: 15rem;
+    max-width: 100%;
+  }
+   .submit-btn {
+    font-size: 1rem;
+    padding: 0.7em 1.2em;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+
+  .header-a {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .menu-image {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+}
