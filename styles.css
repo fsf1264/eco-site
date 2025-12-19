@@ -153,6 +153,7 @@ li{
   align-items: last baseline;
   margin: 2.5rem ;
   flex-wrap: wrap;
+  padding: 0;
 }
 #site-menu li{
   width: fit-content;
